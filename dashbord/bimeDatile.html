@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>پنل کاربری</title>
+	</head>
+	<body>
+		<section class="sidebar active">
+			<h1 class="sidebar-title">داشبورد</h1>
+			<div class="personal">
+				<img src="./assets/img/user-icon.png" alt="" class="user-image" />
+				<div>
+					<h2>تینا سعیدی</h2>
+					<span> آخرین ورود : ۰۸ دی ماه ۱۴۰۲</span>
+				</div>
+			</div>
+			<ul class="list-links">
+				<li><a  href="index.html">پرتال من</a></li>
+				<li><a class="active" href="bimeDatile.html">بیمه های درمانی</a></li>
+				<li><a href="http://">بیمه عمر</a></li>
+				<li><a href="http://">عمر و پس انداز</a></li>
+				<li><a href="http://">تکافل</a></li>
+				<li>
+					<a href="http://" class="toggle-menu">
+						<span> سایر بیمه نامه ها </span>
+						<span class="arrow-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6">
+								<path
+									fill-rule="evenodd"
+									d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z"
+									clip-rule="evenodd" />
+							</svg>
+						</span>
+					</a>
+					<ul class="submenu">
+						<li>
+							<a href="#">بیمه یک </a>
+						</li>
+						<li>
+							<a href="#">بیمه دو</a>
+						</li>
+						<li>
+							<a href="#">بیمه سه</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<main class="main-wrapper">
+			<header class="header">
+				<div class="container header-content">
+					<div class="left-section">
+						<div class="menu__btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+							</svg>
+						</div>
+
+						<div class="setting-btn" id="settingMenu">
+							<span class="settingBtn">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+								</svg>
+							</span>
+							<div class="screen-wrapper">
+								<button class="fullScreen" id="fullScreen">
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M7 14H5v5h5v-2H7zm-2-4h2V7h3V5H5zm12 7h-3v2h5v-5h-2zM14 5v2h3v3h2V5z" />
+										</svg>
+									</span>
+									<span id="textFullScreen"> حالت تمام صفحه </span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="time">
+						<div class="clock"></div>
+						<div class="date">
+							امروز :
+							<span class="today"></span>
+						</div>
+					</div>
+					<div class="right-setction">
+						<div id="userMenu">
+							<span class="user-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+								</svg>
+							</span>
+							<ul class="user-menu">
+								<li class="border-b">
+									<a href="#">اطلاعات حساب</a>
+								</li>
+								<li class="border-b">
+									<a href="#">تغییر کلمه عبور</a>
+								</li>
+								<li>
+									<a href="#">افزایش کیف پول</a>
+								</li>
+							</ul>
+						</div>
+						<div class="logout" id="logout">
+							<span class="logout-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									class="">
+									<path
+										fill-rule="evenodd"
+										d="M16.5 3.75a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V15a.75.75 0 0 0-1.5 0v3.75a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3V9A.75.75 0 1 0 9 9V5.25a1.5 1.5 0 0 1 1.5-1.5h6ZM5.78 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06l-1.72-1.72H15a.75.75 0 0 0 0-1.5H4.06l1.72-1.72a.75.75 0 0 0 0-1.06Z"
+										clip-rule="evenodd" />
+								</svg>
+							</span>
+							<ul class="logout-menu user-menu">
+								<li class="border-b">
+									<a href="#">خروج از حساب</a>
+								</li>
+								<li class="">
+									<a href="#">بازگشت به صفحه اصلی</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="content-wrapper bimeDatile">
+				<h1 class="navgation-title">بیمه نامه های درمانی</h1>
+				<ul class="navgation">
+					<li>
+						<a href="#">داشبورد</a>
+					</li>
+					<span> / </span>
+					<li>
+						<a href="#" class="active">بیمه نامه های درمانی </a>
+					</li>
+					<li>
+						<a href="#">بازگشت </a>
+					</li>
+				</ul>
+				<div class="border-b"></div>
+				<div class="report">
+					<h2>گزارش گیری</h2>
+					<div class="btn-wrapper">
+						<button class="execl">دریافت فایل اکسل</button>
+						<button class="pdf">دریافت فایل پی دی اف</button>
+						<button class="xml">دریافت فایل XML</button>
+                        <div class="filters">
+                            <label for="#">مرتب سازی : </label>
+                            <select name="filter" id="filter">
+                                <option value="all">  همه بیمه ها </option>
+                                <option value="sort1"> بیمه های فعال </option>
+                                <option value="sort2"> بیمه های منقضی شده</option>
+                                <option value="sort3"> بر اساس تاریخ انقضا صعودی </option>
+                                <option value="sort3"> بر اساس تاریخ انقضا نزولی </option>
+                            </select>
+                        </div>
+					</div>
+					<div class="Insurance-list">
+
+						<div class="Insurance">
+                            <div class="Insurance-status">
+                                <img src="./assets/img/icons8-accept.gif" alt="">
+                                <p> ۳۷۶ روز دیگر فعال است</p>
+                            </div>
+							<div class="Insurance-head">
+								<div class="InsuranceNumber">
+									<label for="InsuranceNumber">شماره بیمه : </label>
+									<p>54298002514025146</p>
+								</div>
+								<div class="border-b"></div>
+							</div>
+							<div class="Insurance-information">
+								<p>
+									<span> بیمه گذار : </span>
+									<span class="information"> صندوق پژوهش و فناوری غیردولتی کالای پزشکی </span>
+								</p>
+								<p>
+									<span> تاریخ صدور بیمه : </span>
+									<span class="information"> 08 / 10 / 1402 </span>
+								</p>
+								<div>
+									<p>
+										<span> تاریخ شروع بیمه : </span>
+										<span class="information"> 08 / 10 / 1402 </span>
+									</p>
+                                    <p>
+										<span> تاریخ خاتمه بیمه : </span>
+										<span class="information"> 08 / 10 / 1403 </span>
+									</p>
+								</div>
+							</div>
+						</div>
+                        
+						<div class="Insurance expired">
+                            <div class="Insurance-status expired">
+                                <img src="./assets/img/icons8-error.gif" alt="">
+                                <p> ۹۸ روز قبل منقضی شده</p>
+                            </div>
+							<div class="Insurance-head">
+								<div class="InsuranceNumber">
+									<label for="InsuranceNumber">شماره بیمه : </label>
+									<p>54298002514025146</p>
+								</div>
+								<div class="border-b"></div>
+							</div>
+							<div class="Insurance-information">
+								<p>
+									<span> بیمه گذار : </span>
+									<span class="information"> صندوق پژوهش و فناوری غیردولتی کالای پزشکی </span>
+								</p>
+								<p>
+									<span> تاریخ صدور بیمه : </span>
+									<span class="information"> 08 / 10 / 1402 </span>
+								</p>
+								<div>
+									<p>
+										<span> تاریخ شروع بیمه : </span>
+										<span class="information"> 08 / 10 / 1402 </span>
+									</p>
+                                    <p>
+										<span> تاریخ خاتمه بیمه : </span>
+										<span class="information"> 08 / 10 / 1403 </span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+                        <div class="Insurance expired">
+                            <div class="Insurance-status expired">
+                                <img src="./assets/img/icons8-error.gif" alt="">
+                                <p> ۹۸ روز قبل منقضی شده</p>
+                            </div>
+							<div class="Insurance-head">
+								<div class="InsuranceNumber">
+									<label for="InsuranceNumber">شماره بیمه : </label>
+									<p>54298002514025146</p>
+								</div>
+								<div class="border-b"></div>
+							</div>
+							<div class="Insurance-information">
+								<p>
+									<span> بیمه گذار : </span>
+									<span class="information"> صندوق پژوهش و فناوری غیردولتی کالای پزشکی </span>
+								</p>
+								<p>
+									<span> تاریخ صدور بیمه : </span>
+									<span class="information"> 08 / 10 / 1402 </span>
+								</p>
+								<div>
+									<p>
+										<span> تاریخ شروع بیمه : </span>
+										<span class="information"> 08 / 10 / 1402 </span>
+									</p>
+                                    <p>
+										<span> تاریخ خاتمه بیمه : </span>
+										<span class="information"> 08 / 10 / 1403 </span>
+									</p>
+								</div>
+							</div>
+						</div>
+                        
+						<div class="Insurance">
+                            <div class="Insurance-status">
+                                <img src="./assets/img/icons8-accept.gif" alt="">
+                                <p> ۳۷۶ روز دیگر فعال است</p>
+                            </div>
+							<div class="Insurance-head">
+								<div class="InsuranceNumber">
+									<label for="InsuranceNumber">شماره بیمه : </label>
+									<p>54298002514025146</p>
+								</div>
+								<div class="border-b"></div>
+							</div>
+							<div class="Insurance-information">
+								<p>
+									<span> بیمه گذار : </span>
+									<span class="information"> صندوق پژوهش و فناوری غیردولتی کالای پزشکی </span>
+								</p>
+								<p>
+									<span> تاریخ صدور بیمه : </span>
+									<span class="information"> 08 / 10 / 1402 </span>
+								</p>
+								<div>
+									<p>
+										<span> تاریخ شروع بیمه : </span>
+										<span class="information"> 08 / 10 / 1402 </span>
+									</p>
+                                    <p>
+										<span> تاریخ خاتمه بیمه : </span>
+										<span class="information"> 08 / 10 / 1403 </span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+                        <div class="Insurance expired">
+                            <div class="Insurance-status expired">
+                                <img src="./assets/img/icons8-error.gif" alt="">
+                                <p> ۹۸ روز قبل منقضی شده</p>
+                            </div>
+							<div class="Insurance-head">
+								<div class="InsuranceNumber">
+									<label for="InsuranceNumber">شماره بیمه : </label>
+									<p>54298002514025146</p>
+								</div>
+								<div class="border-b"></div>
+							</div>
+							<div class="Insurance-information">
+								<p>
+									<span> بیمه گذار : </span>
+									<span class="information"> صندوق پژوهش و فناوری غیردولتی کالای پزشکی </span>
+								</p>
+								<p>
+									<span> تاریخ صدور بیمه : </span>
+									<span class="information"> 08 / 10 / 1402 </span>
+								</p>
+								<div>
+									<p>
+										<span> تاریخ شروع بیمه : </span>
+										<span class="information"> 08 / 10 / 1402 </span>
+									</p>
+                                    <p>
+										<span> تاریخ خاتمه بیمه : </span>
+										<span class="information"> 08 / 10 / 1403 </span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="../dashbord/assets/js/jdate.min.js" charset="utf-8"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,368 @@
+@font-face {
+	font-family: "Vazirmatn";
+	src: url("../fonts/webfonts/Vazirmatn-RD[wght].woff2") format("woff2 supports variations"),
+		url("../fonts/webfonts/Vazirmatn-RD[wght].woff2") format("woff2-variations");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Vazirmatn", sans-serif;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	direction: rtl;
+	font-size: 1.6rem;
+	font-weight: 400;
+	background: linear-gradient(to bottom, rgba(0, 0, 5, 0.1), rgba(0, 5, 0, 0.1)),
+		url("../img/bg.png");
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+a {
+	color: #2659c1;
+	text-decoration: none;
+}
+input,
+button,
+textarea,
+select {
+	font-family: "Vazirmatn", sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	background: transparent;
+	height: fit-content;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 0px 10px transparent;
+	z-index: 10;
+}
+header .container {
+	padding: 1rem;
+}
+.logos {
+	max-width: 25rem;
+	height: auto;
+}
+main {
+	padding-top: 10rem;
+}
+.form-content {
+	max-width: 80%;
+	width: 100%;
+	margin: 0 auto;
+	min-height: calc(100vh - 20rem);
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 8px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 5, 0.2);
+	padding: 3rem;
+	margin-bottom: 5rem;
+	position: relative;
+	z-index: 100;
+}
+.logo__wrapper {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	top: -6rem;
+	left: 50%;
+	background: #ffff;
+	border-radius: 50%;
+	z-index: -100;
+	transform: translateX(-50%);
+	box-shadow: 0px 0px 0px 10px rgba(229, 229, 230, 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo__wrapper > img {
+	display: block;
+	max-width: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+.title > h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #333;
+}
+.border {
+	max-width: 90%;
+	width: 100%;
+	height: 2px;
+	background: rgba(0, 0, 5, 0.2);
+	border-radius: 10px;
+	margin: 2rem auto;
+}
+form {
+	width: 100%;
+	min-height: 100%;
+}
+.fields__wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+	padding-bottom: 4rem;
+	row-gap: 3rem;
+}
+form > .fields {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	position: relative;
+}
+.fields > label {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-right: 3px;
+}
+.fields > input,
+.fields > select {
+	padding: 0.4rem 1rem;
+	border: 2px solid rgba(0, 0, 5, 0.1);
+	font-weight: 600;
+	color: #333;
+	font-size: 1.6rem;
+	border-radius: 5px;
+	outline: none;
+	background: rgba(255, 255, 255, 8);
+	transition: border-color 100ms ease-in-out;
+	width: 100%;
+	transition: all 200ms linear;
+}
+input:focus {
+	border-color: #2659c1;
+}
+.sub__fields {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+.sub__fields > p label {
+	font-size: 1.8rem;
+}
+.sub__fields > p input[type="radio"],
+.btns__wrapper input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	border: 2px solid rgba(0, 0, 5, 0.2);
+	transition: 0.2s all linear;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
+}
+.btns__wrapper input[type="checkbox"] {
+	border-radius: 5px;
+	top: 0px;
+}
+.sub__fields > p input[type="radio"]:checked,
+.btns__wrapper input[type="checkbox"]:checked {
+	border: 10px solid #33b864;
+	outline: unset !important ; /* I added this one for Edge (chromium) support */
+}
+.btns__wrapper > div {
+	margin-top: 1.5rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+.btns__wrapper > div a {
+	font-weight: 600;
+}
+.btns {
+	display: flex;
+	justify-content: end;
+}
+.btns button {
+	appearance: none;
+	-ms-progress-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	background-color: #2659c1;
+	color: #fff;
+	min-width: fit-content;
+	padding: 1.3rem 2rem;
+	border-radius: 5rem;
+	box-shadow: 0px 5px 15px rgba(38, 89, 193, 0.3);
+	font-size: 1.8rem;
+	cursor: pointer;
+	opacity: 0.9;
+	transition: opacity 200ms ease;
+}
+.btns button:hover {
+	opacity: 1;
+}
+
+.err {
+	font-size: 10px;
+	font-weight: 800;
+	background-color: #ffcac0;
+	color: #880808;
+	padding: 3px 5px;
+	border-radius: 4px;
+	display: none;
+	margin-top: 3px;
+	position: absolute;
+	right: 0;
+	bottom: -2.3rem;
+	width: 100%;
+}
+.err.multiple {
+	bottom: unset;
+	top: 102%;
+}
+.err span {
+	display: block;
+}
+.fields {
+	position: relative;
+}
+.accept__icon {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 1rem;
+	top: 3.5rem;
+	display: none;
+}
+
+.error__list {
+	background: #ffcac0;
+	list-style: none;
+	padding: 0.5rem 2rem;
+	margin-top: 2rem;
+	height: fit-content;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+	width: 0;
+	transition: all 280ms linear;
+	transform-origin: center;
+}
+.error__list li {
+	color: #880808;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 1.7;
+}
+.error__list.active {
+	width: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.succes__alert {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	z-index: -100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	opacity: 0;
+	user-select: none;
+	transition: all 200ms ease;
+}
+.succes__alert.active {
+	z-index: 100;
+	transform: scale(1);
+	opacity: 1;
+}
+.content__alert {
+	min-width: 260px;
+	max-width: 400px;
+	min-height: 15rem;
+	background: #33b864;
+	border-radius: 2rem;
+	box-shadow: 0 8px 20px 0 rgba(51, 184, 100, 0.3);
+	position: relative;
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.content__alert > img{
+	display: block;
+	max-width: 80px;
+	height: 80px;
+	position: absolute;
+	top: -4rem;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0px 0px 0px 10px rgba(255,255,255,1);
+	z-index: 300;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.content__alert h1{
+	font-size: 2.5rem;
+	margin: 2rem 1rem;
+	color: #fff;
+	font-weight: 900;
+}
+.content__alert p{
+	font-weight: 500;
+	color: #fff;
+}
+.content__alert > a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	background-color: #fff;
+	margin: 3rem auto;
+	padding: 1rem ;
+	font-weight: 900;
+	color: #2659c1;
+	border-radius: 5px;
+	gap: 1rem;
+}
+.succes__alert{
+
+}

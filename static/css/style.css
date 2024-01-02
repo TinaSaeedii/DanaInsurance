@@ -78,6 +78,10 @@ main {
 	position: relative;
 	z-index: 100;
 }
+.login-content{
+	max-width: 400px;
+	width: 100%;
+}
 .logo__wrapper {
 	position: absolute;
 	width: 10rem;
@@ -363,6 +367,25 @@ input:focus {
 	border-radius: 5px;
 	gap: 1rem;
 }
-.succes__alert{
-
+.login-forms{
+	display: flex;
+	flex-direction: column;
 }
+.loginBtn{
+	background-color: #33b864;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1.5rem 3rem;
+	border-radius: 2rem;
+	box-shadow: 0px 5px 15px #33b864a2;
+}
+
+.signBtn{
+	margin-top: 3rem;
+	font-size: 14px;
+	font-weight: 600;
+}
+

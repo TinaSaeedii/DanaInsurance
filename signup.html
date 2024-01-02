@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./static/css/style.css" />
+		<title>دانا</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<img src="./static/img/logo.png" alt="" class="logos" />
+			</div>
+		</header>
+
+		<main class="main-warpper">
+			<div class="container">
+				<div class="form-content">
+					<div class="logo__wrapper">
+						<img src="./static/img/logo (1).png" alt="">
+					</div>
+					<div class="title">
+						<h1>سامانه بیمه دانا</h1>
+						<p>
+							به سامانه دانا خوش آمدید جهت ثبت نام در سامانه اطلاعات خواسته شده زیر را با دقت تکمیل
+							نمائید.
+						</p>
+					</div>
+					<div class="border"></div>
+					<form action="">
+						<div class="fields__wrapper">
+							<div class="fields">
+								<label for="first__name">نام</label>
+								<input type="text" id="first__name" name="firsName" required autocomplete="off" tabindex="1" />
+								<span class="err">نام باید حداقل ۲ کارکتر داشته باشد</span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="last__name">نام خانوادگی</label>
+								<input type="text" id="last__name" name="lastName" required autocomplete="off" tabindex="2" />
+								<span class="err"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="national__Code">کد ملی</label>
+								<input type="text" id="national__Code" name="nationalCode" required autocomplete="off" tabindex="3"/>
+								<span class="err"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="phone">شماره تلفن</label>
+								<input type="text" id="phone" name="phone" required autocomplete="off" tabindex="4"/>
+								<span class="err"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="gender">جنسیت</label>
+								<div class="sub__fields">
+									<p>
+										<label for="male">مذکر</label>
+										<input type="radio" name="gender" id="male" value="male" tabindex="5" />
+									</p>
+									<p>
+										<label for="famle">مونث</label>
+										<input type="radio" name="gender" id="famle" value="famle" tabindex="6" />
+									</p>
+								</div>
+								<span class="err"></span>
+							</div>
+							<div class="fields">
+								<label for="degree">میزان تحصیلات</label>
+								<select name="degree" id="degree" tabindex="7">
+									<option value="" selected>-- انتخاب کنید --</option>
+									<option value="1">بی سواد</option>
+									<option value="2">سیکل</option>
+									<option value="3">دیپلم</option>
+									<option value="4">لیسانس</option>
+									<option value="5">دکترا</option>
+								</select>
+								<span class="err"></span>
+							</div>
+							<div class="fields">
+								<label for="password">کلمه عبور</label>
+								<input type="password" name="password" id="password" required autocomplete="off" tabindex="8" />
+								<span class="err multiple"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="Re__pass">تکرار کلمه عبور</label>
+								<input type="password"name="re__pass" id="Re__pass" required autocomplete="off" tabindex="9" />
+								<span class="err"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+						</div>
+						<div class="btns__wrapper">
+							<div class="" id="regForm" >
+								<input type="checkbox" name="rols" id="rols" value="accept"/>
+								<label for="rols">
+									<a href="#">قوانین و سیاست </a>
+									سامانه را می پذیرم
+								</label>
+								<span class="err"></span>
+							</div>
+							<div class="btns">
+								<button type="button" id="submit__btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 2048 2048"><path fill="#fff" d="m1902 196l121 120L683 1657L25 999l121-121l537 537z"/></svg>
+									<span> ثبت نام در سامانه</span>
+								</button>
+							</div>
+							<p class="signBtn">
+                                <span> حساب کاربری دارید ؟</span>
+                                <a href="index.html"> ورود حساب کاربری</a>
+                            </p>
+							<ul class="error__list"></ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<div class="succes__alert">
+			<div class="content__alert">
+				<img src="./static/img/logo.png" alt="">
+				<h1>تبریک ! ثبت نام با موفقیت انجام شد ✔</h1>
+				<p>ثبت نام شما در سامانه دانا با موفقیت انجام شد برای ورود به پنل کاربری و مدیریت حساب خود وارد شوید</p>
+				<a href="index.html"  role="button" class="login__btn">
+					<span>ورود به حساب</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="m464 440l-28.12-32.11c-22.48-25.65-43.33-45.45-72.08-58.7c-26.61-12.26-60-18.65-104.27-19.84V432L48 252L259.53 72v103.21c72.88 3 127.18 27.08 161.56 71.75C449.56 284 464 335.19 464 399.26Z"/></svg>
+				</a>
+			</div>
+		</div>
+		<script src="./static/js/app.js"></script>
+	</body>
+</html>

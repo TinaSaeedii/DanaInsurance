@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./static/css/style.css" />
+		<title>دانا</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<img src="./static/img/logo.png" alt="" class="logos" />
+			</div>
+		</header>
+
+		<main class="main-warpper">
+			<div class="container">
+				<div class="form-content login-content">
+					<div class="logo__wrapper">
+						<img src="./static/img/logo (1).png" alt="">
+					</div>
+					<div class="title">
+						<h1>سامانه بیمه دانا</h1>
+						<p>
+							به سامانه دانا خوش آمدید جهت ورود به سامانه اطلاعات خواسته شده زیر را با دقت تکمیل
+							نمائید.
+						</p>
+					</div>
+					<div class="border"></div>
+					<form action="">
+						<div class="fields__wrapper login-forms">
+							<div class="fields">
+								<label for="national__Code">کد ملی</label>
+								<input type="text" id="national__Code" name="nationalCode" required autocomplete="off" tabindex="3"/>
+								<span class="err"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+							<div class="fields">
+								<label for="password">کلمه عبور</label>
+								<input type="password" name="password" id="password" required autocomplete="off" tabindex="8" />
+								<span class="err multiple"></span>
+								<img src="./static/img/icons8-accept.gif" alt="" class="accept__icon">
+							</div>
+				
+						</div>
+						<div class="btns__wrapper">
+							<div class="" id="regForm" >
+								<input type="checkbox" name="rols" id="rols" value="accept"/>
+								<label for="rols">
+                                    مرا به خاطر بسپار
+								</label>
+								<span class="err"></span>
+							</div>
+							<div class="btns">
+								<a class="loginBtn" href="dashbord/index.html" type="button" >
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 2048 2048"><path fill="#fff" d="m1902 196l121 120L683 1657L25 999l121-121l537 537z"/></svg>
+									<span>  ورود به سامانه</span>
+                                </a>
+							</div>
+                            <p class="signBtn">
+                                <span> حساب کاربری ندارید ؟</span>
+                                <a href="signup.html"> ایجاد حساب کاربری</a>
+                            </p>
+							<ul class="error__list"></ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<div class="succes__alert">
+			<div class="content__alert">
+				<img src="./static/img/logo.png" alt="">
+				<h1>تبریک ! ثبت نام با موفقیت انجام شد ✔</h1>
+				<p>ثبت نام شما در سامانه دانا با موفقیت انجام شد برای ورود به پنل کاربری و مدیریت حساب خود وارد شوید</p>
+				<a href="#"  role="button" class="login__btn">
+					<span>ورود به حساب</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="m464 440l-28.12-32.11c-22.48-25.65-43.33-45.45-72.08-58.7c-26.61-12.26-60-18.65-104.27-19.84V432L48 252L259.53 72v103.21c72.88 3 127.18 27.08 161.56 71.75C449.56 284 464 335.19 464 399.26Z"/></svg>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

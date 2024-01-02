@@ -52,7 +52,7 @@ function isEqual(str1, str2) {
 function validetionNationID(e) {
 	const inputEl = e.target;
 	inputEl.setAttribute("maxlength", 10);
-	const value = Number(fixNumbers(inputEl.value));
+	const value = fixNumbers(inputEl.value);
 	const errEL = getErrEl(inputEl);
 	const acceptEl = getacceptImgEL(inputEl);
 	if (isNaN(value)) {
